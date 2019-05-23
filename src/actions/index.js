@@ -10,7 +10,7 @@ export function setCities() {
 
 export function selectCity(city) {
   return {
-    type: 'SET_CITY',
-    payload: city ? city : dbcities[0]
+    type: 'SELECT_CITY',
+    payload: city
   }
 }
