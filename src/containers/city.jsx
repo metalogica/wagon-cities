@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 class City extends Component {
   constructor(props) {
@@ -17,8 +18,9 @@ class City extends Component {
         </div>
       )
     } else {
+      const url = `url('https://kitt.lewagon.com/placeholder/cities/${this.props.selectedCity.slug}'`
       return (
-        <div className="active-city">
+        <div className="active-city" style={{backgroundImage: url}}>
           <h5>{this.props.selectedCity.name}</h5>
           <p>{this.props.selectedCity.address}</p>
           <a>{this.props.selectedCity.slug}</a>

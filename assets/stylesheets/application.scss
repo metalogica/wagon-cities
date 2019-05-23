@@ -1,7 +1,46 @@
 body {
-  font-family: Helvetica;
+  color: white;
+  background-color: black;
 }
+
+#id {
+  width: 100vh;
+  height: 100vh;
+}
+
 .app {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border: 1px solid red;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  .city-list {
+    width: 50vw;
+    overflow: scroll;
+  }
+  .active-city {
+    width: 50vw;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    border: 10px solid blue;
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.list-group-item {
+  background-color: transparent;
+  cursor: pointer;
+    &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.city-card {
+  // bootstrap style
 }
