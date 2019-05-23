@@ -9,6 +9,7 @@ class ActiveCity extends Component {
   }
 
   render() {
+    // Will set the initial active city to the first in the cities list unless a active city is present
     const city = (this.props.activeCity.name != null ) ? this.props.activeCity : this.props.cities[0];
     const url = `url('https://kitt.lewagon.com/placeholder/cities/${city.slug}'`
 
